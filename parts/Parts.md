@@ -19,3 +19,12 @@
    * 10-DIP (0.600", 15.24mm)
    * [Datasheet](http://www.inolux-corp.com/datasheet/Display/Through-Hole-Display/SingleDigit/INND-TS56%20Series_V1.0.pdf) /
 [Local](INND-TS56_Series_V1.0.pdf).
+
+* [Breadboard large](https://www.digikey.com/en/products/detail/twin-industries/TW-E40-1020/643111)
+   * Solderless Breadboard Terminal Strip (No Frame) 6.50" x 2.14" (165.1mm x 54.4mm)
+
+* [Breadboard small](https://www.digikey.com/en/products/detail/bud-industries/BB-32650-Y/10518791)
+   * Solderless Breadboard Terminal Strip (No Frame) 1.85" L x 1.42" W (47.0mm x 36.1mm)
+
+* [Jumper Wire Kit](https://www.digikey.com/en/products/detail/twin-industries/TW-E012-000/643115)
+   * Jumper Wire Kit - Pre-Formed for Breadboard Various 140 per Pkg
