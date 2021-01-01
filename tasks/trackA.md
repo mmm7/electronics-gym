@@ -51,12 +51,85 @@ Build a circuit (form transistors, capacitors and resistors) that makes 2 LEDs b
 
 [Solution](https://www.instructables.com/Simple-Blinking-LED-Circuit/)
 
-### Edge Detection
-JK tároló tranzisztorból
-D tároló tranzisztorból
-3-bites számláló tranzisztorból
-3-bites [output] shift-regiszter tranzisztorból
+## Chapter 5: Edge Detection
 
-## Chapter 5:
+🠕 denotes *rising edge*.
+🠗 denotes *falling edge*.
+
+### Edge triggered RS flip-flop
+
+* Build an Edge triggered RS flip-flop from transistors
+
+| Clock (clk) | S (input) | R (input) | Q (output) |
+|:-----------:|:---------:|:---------:|:----------:|
+| 🠕           | 1         | 0         | 1          |
+| 🠕           | 0         | 1         | 0          |
+| 🠕           | 0         | 0         | Q (hold)   |
+| 🠕           | 1         | 1         | undefined  |
+| X           |           |           | hold       |
+
+*  Build the same RS flip-flop triggered by **falling** edge.
+
+### Edge triggered JK flip-flop
+
+* Build an Edge triggered JK flip-flop from transistors. JK is very similar
+  to RS, but if both inputs being high means **toggle** (instead of invalid).
+
+| Clock (clk) | J (input) | K (input) | Q (output) |
+|:-----------:|:---------:|:---------:|:----------:|
+| 🠕           | 1         | 0         | 1 (set)    |
+| 🠕           | 0         | 1         | 0 (reset)  |
+| 🠕           | 0         | 0         | Q (hold)   |
+| 🠕           | 1         | 1         | !Q (toggle)|
+| X           |           |           | hold       |
+
+### Edge triggered D flip-flop
+
+* Build an Edge triggered D flip-flop from transistors. D flip-flops "store"
+  a single ("data") bit. There is only 1 input: D.
+
+| Clock (clk) | D (input) | Q (output) |
+|:-----------:|:---------:|:----------:|
+| 🠕           | 1         | 1 (set)    |
+| 🠕           | 0         | 0 (reset)  |
+| X           |           | hold       |
+
+## Chapter 6: Bit by bit
+
+### Counter
+
+* Build a 3-bit counter (with reset input) from transistors.
+
+| Clock (clk) | RST (input) | (C,B,A) (output)            |
+|:-----------:|:-----------:|:---------------------------:|
+| 🠕           | 0           | 0,0,0                       |
+| 🠕           | 1           | (C,B,A)+1 (increment)       |
+| X           |             | (C,B,A) (hold)              |
+
+The counter has 3 outputs (3 bits). It cycles through the states:
+
+`(0,0,0) -> (0,0,1) -> (0,1,0) -> (0,1,1) -> (1,0,0) -> (1,0,1) -> (1,1,0) -> (1,1,1)`
+
+* Modify 3-bit counter to a 5-counter.
+
+The BCD counter syscles through the states:
+
+`(0,0,0) -> (0,0,1) -> (0,1,0) -> (0,1,1) -> (1,0,0)`
+
+Use the reset input.
+
+### Shift-register
+
+* Build a 3-bit 1-directional shift-register (from transistors).
+
+SI: Serial Input
+
+| Clock (clk) | SI (input)  | C   | B   | A   |
+|:-----------:|:-----------:|:---:|:---:|:---:|
+| 🠕           | 0           | B   | A   | 0   |
+| 🠕           | 1           | B   | A   | 1   |
+| X           |             | C   | B   | A   |
+
+## Chapter 7:
 
 Coming soon... stay tuned.
