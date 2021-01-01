@@ -54,6 +54,7 @@ Build a circuit (form transistors, capacitors and resistors) that makes 2 LEDs b
 ## Chapter 5: Edge Detection
 
 🠕 denotes *rising edge*.
+
 🠗 denotes *falling edge*.
 
 ### Edge triggered RS flip-flop
@@ -62,13 +63,13 @@ Build a circuit (form transistors, capacitors and resistors) that makes 2 LEDs b
 
 | Clock (clk) | S (input) | R (input) | Q (output) |
 |:-----------:|:---------:|:---------:|:----------:|
-| 🠕           | 1         | 0         | 1          |
-| 🠕           | 0         | 1         | 0          |
+| 🠕           | 1         | 0         | 1 (set)    |
+| 🠕           | 0         | 1         | 0 (reset)  |
 | 🠕           | 0         | 0         | Q (hold)   |
 | 🠕           | 1         | 1         | undefined  |
 | X           |           |           | hold       |
 
-*  Build the same RS flip-flop triggered by **falling** edge.
+*  Build the same RS flip-flop triggered by **falling** edge (instead of rising).
 
 ### Edge triggered JK flip-flop
 
@@ -102,7 +103,7 @@ Build a circuit (form transistors, capacitors and resistors) that makes 2 LEDs b
 
 | Clock (clk) | RST (input) | (C,B,A) (output)            |
 |:-----------:|:-----------:|:---------------------------:|
-| 🠕           | 0           | 0,0,0                       |
+| 🠕           | 0           | 0,0,0 (reset to 0)          |
 | 🠕           | 1           | (C,B,A)+1 (increment)       |
 | X           |             | (C,B,A) (hold)              |
 
@@ -110,9 +111,9 @@ The counter has 3 outputs (3 bits). It cycles through the states:
 
 `(0,0,0) -> (0,0,1) -> (0,1,0) -> (0,1,1) -> (1,0,0) -> (1,0,1) -> (1,1,0) -> (1,1,1)`
 
-* Modify 3-bit counter to a 5-counter.
+* Modify 3-bit counter to a 3-bit *5-counter*.
 
-The BCD counter syscles through the states:
+The 5 counter has 5 state, cyscles through the follwing states:
 
 `(0,0,0) -> (0,0,1) -> (0,1,0) -> (0,1,1) -> (1,0,0)`
 
