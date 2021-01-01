@@ -130,7 +130,3 @@ SI: Serial Input
 | 🠕           | 0           | B   | A   | 0   |
 | 🠕           | 1           | B   | A   | 1   |
 | X           |             | C   | B   | A   |
-
-## Chapter 7:
-
-Coming soon... stay tuned.
