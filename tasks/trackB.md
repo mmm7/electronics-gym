@@ -128,6 +128,19 @@ Build an (non-clocked) RS flip-flop from 74xx logic gates.
 * Build a 4-bit up-down counter from JK flip-flops and logic gates.
 * Build a 4-bit shift-register from D flip-flops and logic gates.
 
-## Chapter 5
+## Chapter 5: Clock
+
+1. Wire up a 4-bit binary counter (74393) to LEDs.
+2. **Manual clock.** Make it incerement on every press of a button.
+3. **Transistor-based clock.** Build a clock signal generator for it from RC and transistors.
+4. **555.** Build a clock signal generator for it from a 555 IC.
+
+Links:
+
+* [Wikipedia](https://en.wikipedia.org/wiki/555_timer_IC)
+* [Datasheet](https://www.ti.com/lit/ds/slfs022i/slfs022i.pdf)
+* [Tutorial](https://www.electronics-tutorials.ws/waveforms/555_timer.html)
+
+## Chapter 6
 
 Coming soon...
