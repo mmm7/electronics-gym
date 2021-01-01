@@ -60,7 +60,9 @@ Build a logic circuit that:
 
 ### Hex digit to 7-segment
 
-Extend the BCD to 7-segment logic to display ![all hex digits](hex7segment.png).
+Extend the BCD to 7-segment logic to display
+
+![all hex digits](hex7segment.png).
 
 ## Chapter 3: State (Flip-flops)
 
@@ -118,7 +120,7 @@ Build an (non-clocked) RS flip-flop from 74xx logic gates.
 * Study the [datasheet of the 7474](https://www.ti.com/lit/ds/symlink/sn74ls74a.pdf) (D-flip-flop).
 * Study the [datasheet of the 74112](ti.com/lit/ds/symlink/sn74s112a.pdf) (JK).
 
-![7474 pinout](7474-pinout.jpg)
+![7474 pinout](7474-pinout.png)
 
 ![74112 pinout](74112-pinout.jpg)
 
